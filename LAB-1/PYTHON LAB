@@ -1,0 +1,13 @@
+n=int(input("enterr the number of digits: "))
+if n>0:
+    number=int(input(f"enter a {n}-digit integer: "))
+    if number>=10**(n-1) and number<10**n:
+        for i in range (n):
+            digit=number//(10**(n-1))
+            print(digit)
+            number%=10**(n-1)
+            n-=1
+    else:
+        print(f"please enter a {n}-digit integer:")
+else:
+    print("please enter a valid number of digit (greater than 0).")
