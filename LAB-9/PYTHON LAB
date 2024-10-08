@@ -1,0 +1,35 @@
+def count_duplicate_word(sentance):
+    word=sentance.split()
+    word_count={}
+    for word in word:
+        word=word.lower()
+        if word in word_count:
+            word_count[word]+=1
+        else:
+            word_count[word]=1
+    duplicate={word : count for word, count in word_count.items() if count>1}
+    if duplicate:
+        print(" duplicate word and the counts :")
+        for word, count in duplicate.items():
+            print(f"{word}:{count}")
+    else:
+         print("no duplicate word found")
+sentance=input("enter a sentence : ")
+count_duplicate_word(sentance)def count_duplicate_word(sentance):
+    word=sentance.split()
+    word_count={}
+    for word in word:
+        word=word.lower()
+        if word in word_count:
+            word_count[word]+=1
+        else:
+            word_count[word]=1
+    duplicate={word : count for word, count in word_count.items() if count>1}
+    if duplicate:
+        print(" Duplicate word and the counts :")
+        for word, count in duplicate.items():
+            print(f"{word}:{count}")
+    else:
+         print("No Duplicate Word Found")
+sentance=input("Enter a sentence : ")
+count_duplicate_word(sentance)
