@@ -1,0 +1,6 @@
+def capitalize_strings(string_list):
+    return[s.capitalize() for s in string_list]
+
+input_string=['hello','good','how','simple']
+capitalize_strings=capitalize_strings(input_string)
+print(capitalize_strings)
