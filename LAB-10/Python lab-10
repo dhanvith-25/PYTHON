@@ -1,0 +1,29 @@
+from numpy import asarray
+data= [[1,2,3],[4,5,6]]
+data=asarray(data)
+print('numpy array')
+print(data)
+print("_________________________")
+
+totalr=data.sum(axis=1)
+totalc=data.sum(axis=0)
+print("row sum")
+print(totalr)
+print("column sum")
+print(totalc)
+print("_________________________")
+
+meanr=data.mean(axis=1)
+meanc=data.mean(axis=0)
+print("row mean")
+print(meanr)
+print("Column mean")
+print(meanc)
+print("___________________________")
+       
+stdr=data.std(axis=1)
+stdc=data.std(axis=0)
+print("row std")
+print(stdr)
+print("Column std")
+print(stdc)
